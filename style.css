@@ -1,0 +1,162 @@
+
+body {
+  margin: 0;
+  font-family: Tahoma;
+  background: #f4f4f4;
+}
+main h2,main p{
+	text-align: center;
+}
+header {
+  background-color:blueviolet;
+	color: white;
+	padding: 20px 0;
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+	align-items: center;
+}
+header .site-title{
+	margin: 0;
+	font-size: 28px;
+	font-weight: bold;
+}
+header h1{
+	margin: 0;
+	font-size: 24px;
+}
+nav ul {
+  list-style: none;
+  margin: 15px 0 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+	gap:30px;
+  background:#444;
+}
+
+nav ul li {
+position: relative;
+}
+
+nav ul li a {
+ color: white;
+	text-decoration: none;
+	padding: 10px 15px;
+	font-size: 18px;
+	display: block;
+	transition: background 0.3s,color 0.3s;
+}
+
+nav ul li a:hover {
+	text-decoration: underline;
+  background: #ffffff;
+	color: #4B3FF2;
+}
+nav ul li ul.dropdown-menu{
+	display: none;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	background-color: #4B3FF2;
+	 list-style: none;
+	margin: 0;
+    padding: 10px 0;
+	border-radius: 6px;
+	min-width: 150px;
+}
+nav ul li ul.dropdown-menu li a{
+	padding: 8px 15px;
+	
+}
+nav ul li ul.dropdown-menu li a:hover{
+	background: #ddd;
+	color: black;
+}
+nav ul li ul.dropdown-menu:hover .dropdown-menu{
+	display: block;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+
+  background: #333;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  min-width: 150px;
+  border-radius: 5px;
+}
+
+.dropdown-menu li a {
+  padding: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+/* CSS Document */
+
+.intro{
+	padding: 20px;
+	background-color: #eee;
+	text-align: center;
+}
+.books{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap:20px;
+	padding: 20px;
+}
+.book{
+	text-align: center;
+	background-color: white;
+	padding: 15px;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+	width: 200px;
+}
+.book img{
+	width: 100%;
+	border-radius: 5px;
+}
+.book button{
+	background-color:darkolivegreen;
+	color: white;
+	border: none;
+	padding: 10px;
+	cursor: pointer;
+	width: 100%;
+	border-radius: 5px;
+}
+.book button:hover{
+	background-color:darkseagreen;
+}
+footer{
+	background-color: #333;
+	color: white;
+	padding: 15px;
+	margin-top: 20px;
+}
+.contact-form{
+	display: flex;
+	flex-direction: column;
+	gap:10px;
+	max-width: 400px;
+	margin: 20px auto;
+}
+.contact-form input,contact-form textarea{
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+.contact-form button{
+	background: #444;
+	color: white;
+	padding: 10px;
+	border: none;
+	border-radius: 4px;
+}
